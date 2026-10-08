@@ -1,105 +1,258 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>lUIZA PEREIRA </title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiza Bernardo de Souza Pereira</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background: #fff7fb;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #d63384, #9b2c83);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+        header p {
+            font-size: 19px;
+        }
+        nav {
+            background: white;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        nav a {
+            color: #9b2c83;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #d63384;
+        }
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+        section h2 {
+            color: #9b2c83;
+            font-size: 30px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .sobre {
+            text-align: center;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+        .habilidades {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .habilidade {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            color: #9b2c83;
+            font-weight: bold;
+        }
+        .amigos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+        .amigo {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+        .amigo:hover {
+            transform: translateY(-7px);
+        }
+        .amigo .emoji {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .amigo h3 {
+            color: #d63384;
+        }
+        .projetos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        .projeto {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        .projeto h3 {
+            color: #d63384;
+            margin-bottom: 12px;
+        }
+        .projeto p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .projeto a {
+            color: #9b2c83;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .contato {
+            text-align: center;
+        }
+        .contato a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 22px;
+            background: #9b2c83;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+        .contato a:hover {
+            background: #d63384;
+            transform: scale(1.05);
+        }
+        footer {
+            background: #9b2c83;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+            nav a {
+                margin: 0 5px;
+                font-size: 13px;
+            }
+        }
+    </style>
 </head>
 <body>
-<!--header é a parte do cabeçalho do site, é o topo da página-->
-<header class="cabecalho-itens">
-<img class="cabecalho_imagem" src="foto.png" alt="logo_rodape da
-Página">
-<h1 class="titulo_site">LUIZA PEREIRA</h1>
-<div class="sociais">
-<img class="sociais" src="whatsapp.png" alt="Logo do Whats da lUIZA">
-<img class="sociais" src="facebook.png" alt="Facebook da lUIZA">
-<img class="sociais" src="instagram.png" alt="instagram da
-lUIZA">
-</div>
-</header>
-<!--Seção banner 1 é a parte do paragrafo 1 da página-->
-<section class="banner1">
-<img class="LUIZA.image" src="paragrafo_1_banner.jpg" 
-
-<section class="estudante">
-<h1 class="estudante_titulo">Alunos em destaque 2026</h1>
-<p> </p>
-<div class="estudantes_todos">
-<div class="estudante-div">
-<img class="estudante-imagem" src="estudante_menino.png" alt="Foto da
-turma do 1CDS do ano de 2026">
-<h3 class="estudante-nome">Aluno 1</h3>
-<a href="https://cursos.alura.com.br/dashboard">
-<p> </p>
-<img class="estudante-icone" src="logo_nossa_escola.png" alt="Link do Site da
-escola"></a>
-<img class="estudante-icone" src="instagram.png" alt="Link do
-Instagram">
-<img class="estudante-icone" src="facebook.png" alt="Link do Facebook">
-</div>
-
-<div class="estudante-div">
-<img class="estudante-imagem" src="estudante_menino.png" alt="Foto da
-turma do 1CDS do ano de 2026">
-<h3 class="estudante-nome">Aluno 2</h3>
-<a href="https://cursos.alura.com.br/dashboard">
-<p> </p>
-<img class="estudante-icone" src="logo_nossa_escola.png" alt="Link do Site da
-escola"></a>
-<img class="estudante-icone" src="instagram.png" alt="Link do
-Instagram">
-<img class="estudante-icone" src="facebook.png" alt="Link do Facebook">
-</div>
-
-<div class="estudante-div">
-<img class="estudante-imagem" src="estudante_menino.png" alt="Foto da
-turma do 1CDS do ano de 2026">
-<h3 class="estudante-nome">Aluno 3</h3>
-<a href="https://cursos.alura.com.br/dashboard">
-<p> </p>
-<img class="estudante-icone" src="logo_nossa_escola.png" alt="Link do Site da
-escola"></a>
-<img class="estudante-icone" src="instagram.png" alt="Link do
-Instagram">
-<img class="estudante-icone" src="facebook.png" alt="Link do Facebook">
-</div>
-
-<div class="estudante-div">
-<img class="estudante-imagem" src="estudante_menino.png" alt="Foto da
-turma do 1CDS do ano de 2026">
-<h3 class="estudante-nome"
-</div>
-</div>
-</section
-
-
-
-<div class="estudante-div">
-<img class="LUIZA" src="foto_luiza.png" alt="Foto da turma do
-2CDS do ano de 2026">
-<h3 class="estudante-luiza">Aluno 6</h3>
-<a href="https://cursos.alura.com.br/dashboard">
-<p> </p>
-<img class="estudante-icone" src="foto_luiza.png" alt="Link do Site
-da escola"></a>
-<img class="llulypereira" src="instagram.png" alt="Link do
-Instagram">
-v>
-</div>
-</div>
-</section>
-<!--Seção rodapé é a parte final da paragrafo 3 da página-->
-<footer class="escola">
-<img class="logo_rodape" src="foto_luiza.png" alt="foto_luiza">
-<h2 class="escola-título">Mais informações entre em contato<a class="link"
-
-href="https://wa.me/41996096063"> 41 9.96096063 </a></h2>
-<p></p>
-<p>©2024 | Curso de ADS | Todos os Direitos Reservados.
-Política de Privacidade | Proteção de dados | Encarregado de dados</p>
-<p> </p>
-</footer>
+    <header>
+        <h1>Luiza Bernardo de Souza Pereira</h1>
+        <p>Bem-vinda ao meu espaço pessoal 💜</p>
+    </header>
+    <nav>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#amigos">Amigos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <section id="sobre">
+        <h2>Sobre mim</h2>
+        <div class="sobre">
+            <p>
+                Olá! Eu sou <strong>Luiza Bernardo de Souza Pereira</strong>.
+                Esta é minha página pessoal, criada para apresentar um pouco
+                sobre mim, meus interesses, minhas habilidades e as pessoas
+                especiais que fazem parte da minha vida.
+            </p>
+        </div>
+    </section>
+    <section id="amigos">
+        <h2>Meus amigos 💕</h2>
+        <div class="amigos">
+            <div class="amigo">
+                <div class="emoji">💗</div>
+                <h3>Amanda</h3>
+            </div>
+            <div class="amigo">
+                <div class="emoji">🫶</div>
+                <h3>Neguinho</h3>
+            </div>
+            <div class="amigo">
+                <div class="emoji">💜</div>
+                <h3>Eduardo</h3>
+            </div>
+            <div class="amigo">
+                <div class="emoji">🌸</div>
+                <h3>Duda</h3>
+            </div>
+            <div class="amigo">
+                <div class="emoji">✨</div>
+                <h3>Gregg</h3>
+            </div>
+            <div class="amigo">
+                <div class="emoji">❤️</div>
+                <h3>Felipe</h3>
+            </div>
+        </div>
+    </section>
+    <section id="habilidades">
+        <h2>Minhas habilidades</h2>
+        <div class="habilidades">
+            <div class="habilidade">HTML</div>
+            <div class="habilidade">CSS</div>
+            <div class="habilidade">JavaScript</div>
+            <div class="habilidade">Criatividade</div>
+            <div class="habilidade">Comunicação</div>
+            <div class="habilidade">Trabalho em equipe</div>
+        </div>
+    </section>
+    <section id="projetos">
+        <h2>Meus projetos</h2>
+        <div class="projetos">
+            <div class="projeto">
+                <h3>Projeto 01</h3>
+                <p>Descrição do primeiro projeto da Luiza.</p>
+                <a href="#" target="_blank">Ver projeto →</a>
+            </div>
+            <div class="projeto">
+                <h3>Projeto 02</h3>
+                <p>Descrição do segundo projeto da Luiza.</p>
+                <a href="#" target="_blank">Ver projeto →</a>
+            </div>
+            <div class="projeto">
+                <h3>Projeto 03</h3>
+                <p>Descrição do terceiro projeto da Luiza.</p>
+                <a href="#" target="_blank">Ver projeto →</a>
+            </div>
+        </div>
+    </section>
+    <section id="contato">
+        <h2>Entre em contato</h2>
+        <div class="contato">
+            <a href="mailto:seuemail@email.com">E-mail</a>
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </div>
+    </section>
+    <footer>
+        <p>©️ 2026 Luiza Bernardo de Souza Pereira</p>
+    </footer>
 </body>
 </html>
